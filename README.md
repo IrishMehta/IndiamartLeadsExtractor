@@ -1,7 +1,3 @@
-Sure, here's a basic README structure that you can use for your project:
-
----
-
 # IndiaMart Scraper
 
 This is a Python-based scraping tool designed to extract user contacts from IndiaMart. The scraper uses an unofficial IndiaMart API to retrieve data and saves it in JSON and CSV formats.
@@ -31,8 +27,11 @@ Use `pip requirements.txt` to install the requirements
 - `loginglid`
 
 As mentioned in the following images, you will be able to extract the cookies from the GetUserContact network call
+![image](https://github.com/IrishMehta/IndiamartLeadsExtractor/assets/54249245/14043c51-c142-41af-8556-6fd7799f6a82)
+
 
 The glid and the loginglid will most likely be the same and you can find that as part of the sample payload when sending a GetUserContact POST request to Indiamart at `https://seller.indiamart.com/enquiry/messagecentre/GetUserContacts`
+![image](https://github.com/IrishMehta/IndiamartLeadsExtractor/assets/54249245/7c627085-4db4-491f-b614-b28400c478f1)
 
 2. Run the script:
 ```
