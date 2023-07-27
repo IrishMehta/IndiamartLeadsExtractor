@@ -10,11 +10,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 You will need the following Python packages installed on your local machine:
 * requests
-* json
-* datetime
-* time
+* json (inbuilt)
+* datetime (inbuilt)
+* time (inbuilt)
 * tqdm
-* csv
+* csv (inbuilt)
+
+Please run `pip install requirements.txt` to install the required libraries
 
 ### Usage
 
