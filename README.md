@@ -16,8 +16,6 @@ You will need the following Python packages installed on your local machine:
 * tqdm
 * csv
 
-Use `pip requirements.txt` to install the requirements 
-
 ### Usage
 
 1. Update the `credentials.json` file with your IndiaMart credentials. You will need the following information:
