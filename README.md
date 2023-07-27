@@ -31,6 +31,7 @@ As mentioned in the following images, you will be able to extract the cookies fr
 
 
 The glid and the loginglid will most likely be the same and you can find that as part of the sample payload when sending a GetUserContact POST request to Indiamart at `https://seller.indiamart.com/enquiry/messagecentre/GetUserContacts`
+
 ![image](https://github.com/IrishMehta/IndiamartLeadsExtractor/assets/54249245/7c627085-4db4-491f-b614-b28400c478f1)
 
 2. Run the script:
@@ -44,7 +45,7 @@ python IndiaMartScraper.py
 and there is an option to move to the next page via clicking the next button. 
 
 * The first 50 leads are extracted by a simple POST request to the aforementioned URL with a simple body, but the subsequent entries (51-100, 101-150 ...)
-are actually bound by a dynamic field in the body called "last_contact_date" which is equal to the timestamp of your 100th lead, 150th lead and so on.
+are actually bound by a dynamic field in the body called "last_contact_date" which is equal to the timestamp of your 100th lead, 150th lead and so on. (The body mentioned here corresponds to the payload in the picture above)
 Since it is impossilbe to figure out that, I ran a simple for loop to pass 15 different "last_contact_date" and get as much data as possible,
 and then place a check for duplicate entries.
 
